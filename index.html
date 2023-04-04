@@ -7,6 +7,68 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="main">
+        <div class="heading">Rock, Paper, Scissors!</div>
+        <div class="score">
+            <div class="userScore"></div>
+            <div class="computerScore"></div>
+        </div>
+        <div class="results"></div>
+        <div class="buttons">
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissor">Scissor</button>
+        </div>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading{
+            margin-bottom: 1rem;
+        }
+        .score{
+            margin-bottom: 1rem;
+        }
+        .results{
+            background-color: black;
+            color: white;
+            height: fit-content;
+            width: fit-content;
+            margin-bottom: 1rem;
+            padding: .5rem;
+        }
+        button{
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: .5rem;
+            padding: .3rem;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: solid black .5px;
+        }
+        button:disabled{
+            background-color: gray;
+            cursor:default;
+            border: none;
+            color: white;
+        }
+    </style>
+
     <script src="script.js"></script>
 </body>
 </html>
